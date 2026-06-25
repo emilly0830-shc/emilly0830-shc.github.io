@@ -521,6 +521,123 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--font-mono);
 }
 
+/* ── ROLE SUB (timeline) ── */
+.role-sub {
+  font-style: italic;
+  font-size: 0.85em;
+  color: var(--muted);
+}
+
+/* ── PROJECT CARD LINK ── */
+.project-card__link {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--amber);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.project-card__link:hover { border-color: var(--amber); }
+
+/* ── SPOTLIGHT (SECOM detail) ── */
+.spotlight {
+  border: 1px solid var(--border);
+  background: var(--paper);
+  padding: 44px;
+}
+
+.spotlight__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-bottom: 36px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.spotlight__num {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  color: var(--amber);
+  line-height: 1;
+}
+
+.spotlight__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+}
+
+.spotlight__desc {
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+/* ── AWARD CARD ── */
+.award-card {
+  border: 1px solid var(--border);
+  background: var(--paper);
+  padding: 36px 40px;
+  max-width: 700px;
+}
+
+.award-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.award-card__date {
+  font-size: 0.75rem;
+  color: var(--amber);
+  margin-bottom: 16px;
+}
+
+.award-card__desc {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.award-card__links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.award-card__links a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--amber);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.award-card__links a:hover { border-color: var(--amber); }
+
+/* ── LEADERSHIP LINKS ── */
+.leadership__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+.leadership__links a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--amber);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.leadership__links a:hover { border-color: var(--amber); }
+
 /* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
@@ -552,4 +669,8 @@ a { color: inherit; text-decoration: none; }
   .footer { flex-direction: column; gap: 8px; }
 
   .section--alt > * { padding-left: 24px; padding-right: 24px; }
+
+  .spotlight { padding: 28px 24px; }
+  .spotlight__stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .award-card { padding: 28px 24px; }
 }
