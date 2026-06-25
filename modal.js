@@ -13,20 +13,17 @@ const modalData = {
     image: "assets/qualcomm-cover.jpg",
     imageAlt: "Qualcomm capstone dashboard",
     body: `
-      <p>Embedded with the Datacenter / Engineering Finance team to build a predictive model forecasting Non-Recurring Engineering (NRE) spend — costs that previously relied on manual, spreadsheet-based estimates with no systematic accuracy benchmark.</p>
+      <p>Partnered with a cross-functional engineering and finance team to build a predictive model supporting cost forecasting and strategic resource planning.</p>
       <h4>What I built</h4>
       <ul>
-        <li>An RF + XGBoost ensemble model with feature engineering across program complexity and device attributes, achieving <strong>30% WAPE</strong> — a 19-point improvement over the team's baseline</li>
-        <li>An interactive <strong>Streamlit dashboard</strong> letting Finance and HR self-serve monthly cost and FTE headcount projections without rerunning the model manually</li>
-        <li>Executive-ready slides translating model output into workforce planning and budget guidance for Finance, HR, and Program Management leadership</li>
+        <li>An ensemble machine learning model with engineered features tailored to the business context, achieving a meaningful improvement in forecast accuracy over the team's prior baseline</li>
+        <li>An interactive self-serve dashboard enabling Finance and HR stakeholders to generate planning projections independently, without relying on manual analyst support</li>
+        <li>Executive-ready presentations translating model output into clear planning and budget guidance for cross-functional leadership</li>
       </ul>
       <h4>Why it mattered</h4>
-      <p>NRE forecasting feeds directly into headcount and budget decisions for engineering leadership. Replacing ad-hoc estimates with a validated model gave stakeholders a repeatable, auditable process — and the self-serve dashboard meant non-technical teams no longer needed to wait on analyst availability for routine projections.</p>
+      <p>Accurate forecasting feeds directly into resourcing and budget decisions for engineering leadership. Replacing ad-hoc, manual estimation with a validated model gave stakeholders a more repeatable, scalable process — and the self-serve dashboard reduced dependency on analyst availability for routine planning needs.</p>
     `,
-    links: [
-      { label: "Capstone Slide Deck", url: "#" },
-      { label: "Streamlit Dashboard (internal)", url: "#" }
-    ]
+    links: []
   },
 
   "nthu-consulting": {
